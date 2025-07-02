@@ -48,3 +48,32 @@ advanced: 能够根据http的字段，通过配置描述，进行分流操作
 
 输出
 成功完成对下游的转发工作
+
+### 项目结构
+java-common-cgi/
+├── controller/
+│   └── EntryController.java         // 所有请求入口
+├── aop/
+│   ├── RateLimitAspect.java         // 限流切面
+│   ├── AuthAspect.java              // 鉴权切面
+│   └── RoutingAspect.java           // 分流切面
+├── config/
+│   └── RouteConfigLoader.java       // 加载配置 JSON 映射
+├── service/
+│   ├── RateLimiterService.java
+│   ├── AuthService.java
+│   ├── RoutingService.java
+│   └── ForwardService.java          // 请求转发
+├── consul/
+│   └── ConsulClient.java            // 通过 blocking query 获取服务
+├── model/
+│   └── RouteConfig.java             // 路由配置实体类
+├── util/
+│   └── JwtUtils.java                // JWT工具类
+└── Application.java                 // 启动类
+
+
++ 参考资料: 
+> [CGI详解](https://blog.csdn.net/weixin_39609623/article/details/86312439)
+[CGI](https://zhuanlan.zhihu.com/p/25013398)
+
