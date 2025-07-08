@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="02. AOP">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/repo/代码/02. AOP/tlias-web-management.zip!/" />
+      <root url="jar://$PROJECT_DIR$/repo/代码/02. AOP/springboot-aop-quickstart.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
