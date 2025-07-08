@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="tlias-web-management2">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/repo/代码/01. 事务管理/tlias-web-management.zip!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
